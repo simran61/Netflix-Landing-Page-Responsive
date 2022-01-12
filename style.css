@@ -1,0 +1,381 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+:root{
+    --primary-color: #e50914;
+    --dark-color: #141414;
+    --light-color: #f4f4f4;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background: #000000;
+    font-family: 'Inter', sans-serif;
+}
+
+.btn-lang{
+    padding: 8px 7px;
+    border-radius: 2px;
+    border: 0.1rem solid white;
+    font-size: 13px;
+    outline: none;
+    background: none;
+    color: white;
+    margin-top: 28px;
+    margin-left: 1075px;
+    background: #00000073;
+    cursor: pointer;
+}
+
+.english{
+    padding: 0.3rem;
+}
+
+ul{
+    list-style: none;
+}
+
+h1,h2,h3,h4{
+    color: #ffffff;
+}
+
+h3{
+    font-weight: lighter;
+}
+
+a{
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.header{
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    background: url("bg.jpg") no-repeat center center/cover;
+}
+
+.header::after{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    background: rgba(0, 0, 0, 0.555);
+    box-shadow: 0px 50px 90px black inset;
+}
+
+.nav-bar{
+    position: relative;
+    z-index: 2;
+    height: 90px;
+}
+
+.nav-bar img{
+    width: 135px;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translate(40% , -50%);
+}
+
+.nav-bar a{
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translate(-60% , -50%);
+}
+
+.header-content{
+    position: relative;
+    margin: 0 26%;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    margin-top: 9rem;
+}
+
+.header-content h1{
+    font-weight: 700;
+    font-size: 48px;
+    margin: 0 30px;
+    line-height: 54.5px;
+    font-family: 'Inter', sans-serif;
+    }
+
+.header-content h3{
+    color: white;
+    font-size: 23px;
+    margin: 16px 0;
+    font-weight: 500;
+}
+
+.tag-line{
+    margin: 0.7rem 0;
+    color: #ffffff;
+    font-size: 17.5px;
+    font-weight: 600;
+    padding-top: 0.5rem;
+    padding-bottom: 1rem;
+    margin-bottom: 17px;
+}
+
+.header-content input{
+    position: absolute;
+    left: -0.5rem;
+    bottom: -8vh;
+    width: 450px;
+    font-size: 1rem;
+    padding: 20px 8px;
+}
+
+.btn{
+    display: inline-block;
+    background: var(--primary-color);
+    color: white;
+    padding: 0.5rem 1.2rem;
+    font-size: 1rem;
+    text-align: center;
+    border: none;
+    cursor: pointer;
+    border-radius: 2px;
+    margin-right: 0.5rem;
+    outline: none;
+    border-radius: 3px;
+    box-shadow: 0 5px 3px rgba(0, 0, 0, 0.45);
+}
+
+.btn:hover{
+    background-color: #ff0410;
+}
+
+.header-content .btn-started{
+    position: absolute;
+    right: -1rem;
+    bottom: -8vh;
+    font-size: 24px;
+    line-height: 2.1rem;
+    padding: 14px 29px;
+    font-weight: 500;
+    background-color: var(--primary-color);
+}
+ 
+.card-1, .card-2, .card-3, .card-4{
+    border-top: 8px hsl(0, 0%, 19%) solid;
+    display: flex;
+    padding: 75px 45px;
+}
+
+.desc-1{
+    padding: 0 4rem;
+    flex-basis: 45%;
+}
+
+.style-cards h1{
+    font-size: 3.1rem;
+    padding: 0 0.1rem 1rem 1rem;
+}
+
+.style-cards h3{
+    font-size: 1.5rem;
+    line-height: 2rem;
+    font-weight: 500;
+    padding-left: 1rem;
+}
+
+.card-1{
+    position: relative;
+    text-align: left;
+    align-items: center;
+    padding: 25px 45px;
+}
+
+.card-1 video{
+    position: relative;
+    width: 523.86px;
+    height: 417.89px;
+    z-index: -1;
+}
+
+.card-2{
+    position: relative;
+    /* display: flex; */
+    text-align: left;
+    align-items: center;
+    padding: 25px 45px 50px;
+}
+
+.desc-2{
+    width: 600px;
+    padding-left: 110px;
+    padding-top: 20px;
+}
+
+.card-3{
+    position: relative;
+    text-align: left;
+    align-items: center;
+    padding: 25px 45px 50px;
+    padding-top: 50px;
+    padding-bottom: 65px;
+}
+
+.desc-3{
+    padding-left: 70px;
+    padding-right: 20px;
+    width: 530px;
+}
+
+.card-3 video{
+    width: 523.86px;
+    height: 417.89px;
+}
+
+.card-4{
+    border-bottom: 8px #303030 solid;
+    position: relative;
+    /* display: flex; */
+    text-align: left;
+    align-items: center;
+    padding: 75px 130px 80px;
+}
+
+.card-4 img{
+    width: 500px;
+}
+
+.desc-4{
+    /* width: 300px; */
+    margin-left: 35px;
+}
+
+.faq{
+    text-align: center;
+    padding-bottom: 3rem;
+    border-bottom: 8px #303030 solid;
+}
+
+.faq h1{
+    padding-bottom: 40px;
+    padding-top: 67px;
+    font-size: 3rem;
+}
+
+.questions{
+    display: flex;
+    flex-direction: column;
+    flex-basis: 40%;
+    align-items: center;
+}
+
+.questions li{
+    padding: 20px 30px;
+    margin: 5px;
+    display: flex;
+    font-size: 1.6rem;
+    background-color: #303030;
+    color: white;
+    text-align: left;
+    width: 56%;
+    font-weight: 500;
+}
+
+.faq-question{
+    display: flex;
+    justify-content: space-between;
+}
+
+.li-faq{
+    font-size: 1.6rem;
+    margin-top: 0;
+    margin-block-start: 0;
+    margin-block-end: 0;
+}
+
+.faq p{
+    padding-top: 47px;
+    /* font-size: 1.2rem; */
+    font-weight: 600;
+}
+
+.input{
+    /* display: inline-grid; */
+    align-items: center;
+    /* grid-template-columns: 50% 40%; */
+}
+
+.input input{
+    position: absolute;
+    left: 22rem;
+    bottom: -184rem;
+    width: 450px;
+    font-size: 1rem;
+    padding: 20px 8px;
+}
+
+.input button{
+    text-align: center;
+    background-color: var(--primary-color);
+    border: none;
+    border-radius: 2px;
+    color: white;
+    position: absolute;
+    bottom: -184rem;
+    right: 21rem;
+    font-size: 24px;
+    line-height: 2.1rem;
+    padding: 19.5px 32px;
+    font-weight: 500;
+    line-height: 24px;
+}
+
+.lastLine{
+    margin-bottom: 105px;
+}
+
+
+.footer, .footer a{
+    max-width: 70%;
+    margin: 1rem auto;
+    overflow: auto;
+    color: #757575;
+    font-size: 0.9rem;
+}
+
+.footer p{
+    margin-bottom: 1.5rem;
+    color: #757575;
+    font-weight: normal;
+    font-size: 1rem;
+    margin-top: 50px;
+}
+
+.footer .footer-cols{
+    display: grid;
+    grid-template-columns: repeat(4 , 1fr);
+    grid-gap: 1.7rem;
+}
+
+.footer li{
+    line-height: 2.4;
+    /* font-size: 30px; */
+}
+
+.lang{
+    padding: 15px 10px;
+    border-radius: 2px;
+    border: 0.1rem solid #868686;
+    font-size: 17px;
+    outline: none;
+    background: none;
+    color: #757575;
+    cursor: pointer;
+}
